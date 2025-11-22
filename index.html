@@ -1,74 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INNOVATIVE MIND</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Owen Kariuki Mundia - Full Stack Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background-color: #878f96; color: #1f2937; font-family: 'Helvetica', sans-serif; }
+    .navbar { background-color: #1f2937; color: #f9fafb; }
+    .navbar a, .navbar h1 { color: #f9fafb; }
+    .section-title { color: #111827; }
+    .skill { background-color: #e5e7eb; color: #1f2937; transition: transform 0.3s, background-color 0.3s; cursor: default; }
+    .skill:hover { transform: scale(1.05); background-color: #d1d5db; }
+    .project-card { background-color: #ffffff; border: 1px solid #d1d5db; color: #1f2937; transition: transform 0.3s, box-shadow 0.3s; cursor: pointer; }
+    .project-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.12); }
+    .project-card a { color: #3b82f6; }
+  </style>
 </head>
 <body>
-    <div class="background-box">
-        <header>
-            <h1 img="images/background.avif">THE BEST</h1>
-        </header>
-        <P>Wok with Owen a very open minded person who is ready to take any challenge no matter how tough it is</P>
-        <header>
-            <h1>Areas of Experties</h1>
-        </header>
-        <nav>
-            <ul>
-                <li>Soft Engineering</li>
-                <li>Social Skills</li>
-                <li>Game Developer</li>
-            </ul>
-        </nav>
-        <main>
-            <section id="hobbies">
-                <h1>SOFTWARE ENGINEERIG</h1>
-                <p>
-                    <h3>Good in the following computing languages</h3>
-    
-                    <li>Java Script</li>
-                    <li>Python</li>
-                    
-                    <h3>Also skilled in:</h3>
-    
-                    <li>Backend Development</li>
-                    <li>Frontend Development</li>
-                </p>
-            </section>
-            <section id="social skills">
-            <h1>Social Skills</h21>
-            <p>
-                Worked in JKIA {Jomo Kenyatta International University} as a social mentor
-            </p>
-            </section>
-            <section>
-                <h1>Game Developer</h1>
-                <h3>Developed global games such as :</h3>
-                    <ol>
-                        <li>Drive-by
-                            <p>An awsome car game that revolves around Africa. In collaboration with google maps i was able to develop a game that can assist drivers what to know what to expext on the road as the road in the game are perfect as they are in our google maps.
-                                This means that if a driver who plays the game goes to a  new area he will already know how to navigate the roads since they are perfectly as they are in the game. This personally is good as it prevents drivers from having to use their phones as they drive.
-                                The game even goes further to include road signs where there need be in real life therefore helping the driver know where there are blindspots and even avoid accidents.
-                            </p>
-                        </li>
-                    </ol>
-                
-            </section>
-    
-        </main>
-        <section id="contact">
-            <H3>
-                CONTACT ME ON
-                <li>+254768468983</li>
-            </H3>
-        </section>
-        <div>
-            <img src="css/in dubai.jpg" alt="image1">
-        </div>
+
+  <!-- Navbar -->
+  <nav class="navbar p-6 flex justify-between items-center shadow-lg">
+    <h1 class="text-2xl font-bold">Owen Kariuki Mundia</h1>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="p-10 text-center max-w-3xl mx-auto">
+    <img src="images/e2594 copy.jpg" alt="Owen Kariuki Mundia" class="w-36 h-36 rounded-full mx-auto mb-6 shadow-lg">
+    <h2 class="text-4xl font-bold mb-4 section-title">Welcome to My Portfolio</h2>
+    <p class="leading-relaxed">I am a goal-oriented Full Stack Developer skilled in both frontend and backend technologies. I enjoy building clean, functional applications and collaborating in teams to solve real-world problems.</p>
+  </section>
+
+  <!-- Skills -->
+  <section class="p-10 max-w-4xl mx-auto">
+    <h3 class="text-3xl font-semibold mb-6 text-center section-title">Skills</h3>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <span class="skill p-4 rounded-xl text-center">JavaScript</span>
+      <span class="skill p-4 rounded-xl text-center">HTML</span>
+      <span class="skill p-4 rounded-xl text-center">CSS</span>
+      <span class="skill p-4 rounded-xl text-center">React</span>
+      <span class="skill p-4 rounded-xl text-center">Python</span>
+      <span class="skill p-4 rounded-xl text-center">Flask</span>
+      <span class="skill p-4 rounded-xl text-center">SQL</span>
     </div>
-    
-    
+  </section>
+
+  <!-- Projects -->
+  <section class="p-10 max-w-5xl mx-auto">
+    <h3 class="text-3xl font-semibold mb-6 text-center section-title">Projects</h3>
+    <div class="grid gap-6 md:grid-cols-2">
+      <div class="project-card p-6 rounded-2xl shadow-md">
+        <h4 class="text-2xl font-bold mb-2">Anime Finder & Streaming Site</h4>
+        <p class="mb-3">A React app that allows users to search, explore, and watch anime. Includes dynamic data fetching and a clean UI.</p>
+        <a href="https://github.com/owen-ko5/End-of-phase-1-project" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-card p-6 rounded-2xl shadow-md">
+        <h4 class="text-2xl font-bold mb-2">Movie Website (React)</h4>
+        <p class="mb-3">A movie browsing platform built using React with search, categories, and detailed movie pages.</p>
+        <a href="https://github.com/owen-ko5/Movie-web-in-React" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-card p-6 rounded-2xl shadow-md">
+        <h4 class="text-2xl font-bold mb-2">Movie Backend API (Flask)</h4>
+        <p class="mb-3">A backend API built using Flask + SQL to power the movie website, with structured endpoints and clean data handling.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="p-10 text-center">
+    <h3 class="text-3xl font-semibold mb-4 section-title">Contact Me</h3>
+    <p class="mb-2">Email: owenmundia9512@gmail.com</p>
+    <p><a href="https://github.com/owen-ko5" target="_blank">GitHub</a></p>
+    <p><a href="https://www.linkedin.com/feed/?doFeedRefresh=true&nis=true" target="_blank">LinkedIn</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="p-6 text-center text-gray-500 text-sm">© 2025 Owen Kariuki Mundia — Full Stack Developer</footer>
+
 </body>
 </html>
